@@ -1,0 +1,299 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+ body {
+     background: #efefef;
+     font-family: "Source Sans Pro", sans-serif;
+     color: #000;
+}
+ a {
+     color: #bd0d0d;
+     text-decoration: none;
+}
+ img {
+     max-width: 100%;
+}
+ ul {
+     list-style: none;
+}
+ #sidebar-panel .panel-bg {
+    background: #080815;
+    position: fixed;
+    width: 230px;
+    height: 100%;
+    z-index: -2;
+    top:0;
+    left:0;
+    bottom: 0;
+}
+ #sidebar-panel {
+     float: left;
+     width: 230px;
+}
+ #content-panel {
+     float: left;
+     width: calc(100% - 230px);
+}
+ .clear {
+     clear: both;
+}
+ .hdd, nav.navbar ul.navbar-list li.hidden-menu {
+     display: none;
+}
+ #sidebar-panel a {
+     color: #fff;
+}
+ #sidebar-panel .header-profile {
+     background: #779b9c;
+     padding: 5px 0;
+}
+ #sidebar-panel .header-profile .header-profile-image {
+     text-align: center;
+     position: relative;
+}
+ #sidebar-panel .header-profile .header-profile-image img {
+     height: 100px;
+     width: 100px;
+     border-radius: 50%;
+}
+ #sidebar-panel .header-profile .header-profile-description-name {
+     padding: 5px 10px;
+}
+ nav.navbar {
+     background: #bd0d0d;
+     line-height: 60px;
+     border-bottom: 1px solid #779b9c;
+}
+ nav.navbar a {
+     color: #fff;
+}
+ nav.navbar ul.navbar-list {
+     list-style: none;
+}
+ nav.navbar ul.navbar-list li {
+     display: inline-block;
+}
+ nav.navbar ul.navbar-list li a {
+     display: block;
+     padding: 0 10px;
+}
+ nav.navbar ul.navbar-list li a span.new {
+     color: #f00;
+     background: #ff0;
+     font-weight: bold;
+     line-height: 25px;
+     padding: 4px;
+     border-radius: 3px;
+     display: inline;
+     margin: 0 0 0 4px;
+}
+ section#sidebar-panel ul.panel-menu-list li {
+     list-style: none;
+}
+ section#sidebar-panel ul.panel-menu-list li a {
+    padding: 7px;
+    display: block;
+    border-bottom: 1px solid #080815;
+    position: relative;
+}
+ section#sidebar-panel ul.panel-menu-list li.panel-menu-list-heading {
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 1px solid #080815;
+    padding: 7px 7px 7px 10px;
+}
+ section#content-panel .panel {
+     padding: 20px;
+     display: blcok;
+}
+ .footer.footer {
+     margin-left: 230px;
+     padding: 0 20px;
+     background: #dadada;
+     border-top: 1px solid #bdbdbd;
+}
+ .footer.footer .copyright {
+     text-align: center;
+     text-transform: uppercase;
+     padding: 10px 5px;
+     background: #bdbdbd;
+     margin: 0 -20px;
+}
+ nav#new-navbar {
+     background: #080815;
+     line-height: 50px;
+     padding: 5px 0;
+}
+ nav#new-navbar a {
+     color: #fff;
+}
+ nav#new-navbar header {
+     float: left;
+     width: 230px;
+     background: #080815;
+     margin: -5px 0;
+     padding: 5px 0;
+     position: relative;
+}
+ nav#new-navbar .navbar-menu {
+     float: left;
+     width: calc(100% - 230px);
+     padding: 0 20px;
+}
+ nav#new-navbar .navbar-menu ul li {
+     display: inline-block;
+}
+ nav#new-navbar .navbar-menu ul li a {
+     display: block;
+     padding: 0 10px;
+}
+ @media(max-width: 978px) {
+     .x-hdd {
+         display:none;
+    }
+     nav#new-navbar header a.sidebar-btn {
+         display: inline-block;
+    }
+     nav#new-navbar .navbar-menu {
+         text-align: center;
+    }
+     nav#new-navbar .navbar-menu ul li {
+        float: left;
+        width: 33%;
+        display: block;
+    }
+     nav.navbar {
+         min-height: 61px;
+         position: fixed;
+         left: 0;
+         right: 0;
+         top: 0;
+         z-index: 10;
+    }
+     nav.navbar ul.navbar-list li {
+         width: 20%;
+         margin:0;
+         float: left;
+         text-align: center;
+    }
+     nav.navbar ul.navbar-list li a:hover, nav.navbar ul.navbar-list li a:focus {
+         background: #779b9c;
+    }
+     #content-panel, #sidebar-panel {
+         width: 100%;
+         float: none;
+    }
+     #sidebar-panel .panel-bg {
+         display: none;
+    }
+     #sidebar-panel {
+         background: #bd0d0d;
+         display: none;
+    }
+     .footer.footer {
+         width: 100%;
+         margin-left: 0;
+    }
+}
+ @media(max-width: 500px) {
+     nav#new-navbar {
+         padding: 0;
+    }
+     nav#new-navbar header {
+         float: none;
+         width: 100%;
+         margin: 0;
+    }
+     nav#new-navbar .navbar-menu {
+         float: none;
+         width: 100%;
+         text-align: center;
+    }
+}
+
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #2e332f;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.fl-lf.w50 {
+    width: 50%;
+}
+.fl-lf {
+    float: left;
+}
+aside.panel .feed .box {
+margin: 5px;
+}
+aside.panel .box {
+background: #fff;
+border-radius: 3px;
+border: 1px solid #bbb;
+border-top: 3px solid #bbb;
+margin-bottom: 10px;
+}
+.two-cols .box {
+margin: 5px;
+}
+aside.panel .box h3 {
+border-bottom: 1px solid #bbb;
+padding: 7px 7px 7px 10px;
+font-weight: 300;
+color: #222;
+}
+
+
+#quiz {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#quiz td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#quiz tr:nth-child(even){background-color: #f2f2f2;}
+
+#quiz tr:hover {background-color: #ddd;}
+.right {
+     text-align: right;
+}
