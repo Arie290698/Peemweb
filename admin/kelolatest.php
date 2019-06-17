@@ -19,29 +19,23 @@ if (isset($_SESSION[alogin])) {
             <div>
             <aside class="panel panel-index">';
 
-    if(isset($update)){
+    if(isset($hapus)){
+				$datasql = mysql_query("delete from test where id='$idtest'");
         echo '<center><h2>Data telah diupdate</h2></center>';
     }
-
-echo '<form name="form1" method="post" action="kelolatest.php" style="border:1px solid #ccc">
-  <div class="container">
-    <h1>Ubah Data Akun</h1>
-    <hr>
-	
-	<label for="email"><b>Username</b></label>
-    <input type="text" value="' . $adm[1] . '" name="username" readonly>
-	
-	<label for="name"><b>Nama Lengkap</b></label>
-    <input type="text" value="' . $adm[3] . '" name="nama" required>
-	
-    <label for="email"><b>Email</b></label>
-    <input type="text" value="' . $usr[4] . '" name="email" required>
-    <div class="clearfix">
-      <button type="submit" name="update">Ubah Data</button>
-    </div>
-  </div>
-</form>
-</aside>
+		echo '<table id="data">
+						<tr>
+							<th><b>Nama Test</b></th>
+							<th><b>Aksi</b></th>
+						</tr>';
+		$datasql = mysql_query("select * from test");
+							while($data    = mysql_fetch_row($datasql)) {
+								echo '<tr>
+											<td>' . $data[1] . '</td>
+											<td><form action="kelolatest.php" method="post"><input type="hidden" name="idtest" value=' . $data[0] . '><button type="submit" name="hapus">Hapus</button></form></td>
+											</tr>';
+							}
+		echo '</table></aside>
             </div>
         </section>';
 }else{
