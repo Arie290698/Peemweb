@@ -71,8 +71,6 @@ if (isset($_SESSION[alogin])) {
                                     <a href="kelolatest.php"><button>Kelola Mata Pelajaran</button></a>
 									<hr>
 									<a href="kelolasoal.php"><button>Kelola Soal</button></a>
-									<hr>
-									<a href="kelolaadmin.php"><button>Kelola User</button></a>
                                 </div>
                                 <div class="clear"></div>
                             </div>
@@ -108,9 +106,6 @@ if (isset($_SESSION[alogin])) {
     <button type="submit" name="submit">Login</button>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <span class="psw">Belum punya akun? <a href="daftar.php">Daftar disini!</a></span>
-  </div>
 </form>
 </aside>
 </div>
